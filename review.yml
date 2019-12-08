@@ -1,4 +1,4 @@
-echo "apiVersion: apps/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: reviews-v1
@@ -18,5 +18,5 @@ spec:
     spec:
       containers:
       - name: reviews
-        image: \'docker.io/istio/examples-bookinfo-reviews-v1:1.15.0\' "  \
-| oc apply -n bookinfo -f -
+        image: 'docker.io/istio/examples-bookinfo-reviews-v1:1.15.0
+
