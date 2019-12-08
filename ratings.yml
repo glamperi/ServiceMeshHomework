@@ -1,0 +1,22 @@
+echo "apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ratings-v1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ratings
+      version: v1 
+  template:
+    metadata:
+      annotations:
+        sidecar.istio.io/inject:  \"true\"
+      labels:
+        app: ratings
+        version: v1 
+    spec:
+      containers:
+      - name: ratings
+        image: \'docker.io/istio/examples-bookinfo-ratings-v1:1.15.0\' "  \
+| oc apply -n bookinfo -f -
