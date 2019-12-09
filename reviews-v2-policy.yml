@@ -4,8 +4,8 @@ metadata:
   name: reviews-v2-service-mtls
   namespace: bookinfo
 spec:
- peers:
+  peers:
   - mtls:
-      mode: STRICT
-  targets:
-  - name: reviews-v2
+    mode: STRICT
+    targets:
+    - name: reviews-v2
