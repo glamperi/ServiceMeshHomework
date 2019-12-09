@@ -5,7 +5,7 @@ metadata:
   namespace: bookinfo
 spec:
   peers:
-  - mtls:
-    mode: STRICT
-    targets:
+    - mtls:
+      mode: STRICT
+  targets:
     - name: reviews-v2
