@@ -1,11 +1,11 @@
 apiVersion: authentication.istio.io/v1alpha1
 kind: Policy
 metadata:
-  name: ratings-v1-service-mtls
+  name: ratings-service-mtls
   namespace: bookinfo
 spec:
   peers:
   - mtls:
       mode: PERMISSIVE
   targets:
-    - name: ratings-v1
+    - name: ratings
