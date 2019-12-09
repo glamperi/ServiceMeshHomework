@@ -4,7 +4,7 @@ metadata:
   name: reviews-v2-service-mtls
   namespace: bookinfo
 spec:
- peers:
+  peers:
   - mtls:
       mode: PERMISSIVE
   targets:
