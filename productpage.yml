@@ -18,5 +18,5 @@ spec:
     spec:
       containers:
       - name: productpage-v1
-        image: 'docker.io/istio/examples-bookinfo-reviews-v2:1.15.0'
+        image: 'docker.io/istio/examples-bookinfo-productpage-v1:1.15.0'
 
