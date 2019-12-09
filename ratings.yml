@@ -18,5 +18,5 @@ spec:
     spec:
       containers:
       - name: ratings
-        image: 'docker.io/istio/examples-bookinfo-ratings-v2:1.15.0'
+        image: 'docker.io/istio/examples-bookinfo-ratings-v1:1.15.0'
 
