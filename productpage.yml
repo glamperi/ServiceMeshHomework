@@ -1,4 +1,4 @@
-echo "apiVersion: apps/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: productpage-v1
@@ -6,17 +6,17 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: productpage 
-      version: v1 
+      app: productpage
+      version: v1
   template:
     metadata:
       annotations:
-        sidecar.istio.io/inject:  \"true\"
+        sidecar.istio.io/inject: \"true\"
       labels:
         app: productpage
-        version: v1 
+        version: v1
     spec:
       containers:
-      - name: productpage
-        image: \'docker.io/istio/examples-bookinfo-productpage-v1:1.15.0\' "  \
-| oc apply -n bookinfo -f -
+      - name: productpage-v1
+        image: 'docker.io/istio/examples-bookinfo-reviews-v2:1.15.0'
+
