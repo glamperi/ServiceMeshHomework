@@ -18,4 +18,4 @@ spec:
     spec:
       containers:
       - name: details
-        image: 'docker.io/istio/examples-bookinfo-details-v1:1.15.00
+        image: 'docker.io/istio/examples-bookinfo-details-v1:1.15.00'
