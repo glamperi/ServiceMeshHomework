@@ -1,0 +1,11 @@
+apiVersion: authentication.istio.io/v1alpha1
+kind: Policy
+metadata:
+  name: reviews-v2-service-mtls
+  namespace: bookinfo
+spec:
+ peers:
+  - mtls:
+      mode: STRICT
+  targets:
+  - name: reviews-v2
