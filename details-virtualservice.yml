@@ -15,4 +15,4 @@ spec:
     - destination:
         port:
           number: 9080
-        host: details-bookinfo.apps.cluster-vegas-b82c.vegas-b82c.svc.cluster.local
+        host: details-bookinfo.cluster-vegas-b82c.vegas-b82c.svc.cluster.local
