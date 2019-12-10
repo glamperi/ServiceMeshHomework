@@ -1,0 +1,18 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: productpage-virtualservice
+spec:
+  hosts:
+  - productpage.bookinginfo.apps.cluster-vegas-b82c.vegas-b82c.example.opentlc.com
+  gateways:
+  - booking-wildcard-gateway.bookretail-istio-system.apps.cluster-vegas-b82c.vegas-b82c.svc.cluster.local
+  http:
+  - match:
+    - uri:
+        prefix: /
+    route:
+    - destination:
+        port:
+          number: 8080
+        host: productpage-bookinfo.apps.cluster-vegas-b82c.vegas-b82c.svc.cluster.local
