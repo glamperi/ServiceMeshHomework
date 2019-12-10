@@ -7,7 +7,7 @@ metadata:
     app: ratings
   name: productpage-service-gateway
 spec:
-  host: productpage.apps.bookinginfo.cluster-vegas-b82c.vegas-b82c.example.opentlc.com
+  host: productpage.bookinginfo.apps.cluster-vegas-b82c.vegas-b82c.example.opentlc.com
   port:
     targetPort: https
   tls:
