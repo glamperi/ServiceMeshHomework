@@ -3,7 +3,7 @@ kind: DestinationRule
 metadata:
   name: productpage-client-mtls
 spec:
-  host: productpage.apps.bookinfo.svc.cluster.local
+  host: productpage.bookinfo.svc.cluster.local
   trafficPolicy:
     tls:
       mode: ISTIO_MUTUAL
